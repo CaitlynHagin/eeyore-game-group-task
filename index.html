@@ -10,27 +10,85 @@
       }
     </style>
     <script>
-      //   // Mo screen-break animation
-      //   let interval = setInterval(function () {
-      //     let div = document.getElementById("bullseyeTarget");
-      //     div.style.top = div.offsetTop + 0.5 + "px";
-      //     div.style.left = div.offsetLeft + 1 + "px";
-      //   }, 200);
+      // // Mo screen-break animation
+      // let interval = setInterval(function () {
+      //   let div = document.getElementById("bullseyeTarget");
+      //   div.style.top = div.offsetTop + 0.5 + "px";
+      //   div.style.left = div.offsetLeft + 1 + "px";
+      // }, 200);
 
-      //   let bodyWidth = window.innerWidth;
-      //   let bodyHeight = window.innerHeight;
-      //   console.log(bodyWidth);
-      //   console.log(bodyHeight);
+      // let bodyWidth = window.innerWidth;
+      // let bodyHeight = window.innerHeight;
+      // console.log(bodyWidth);
+      // console.log(bodyHeight);
     </script>
+    <!--  -->
+    <!-- simple static eeyore -->
+    <style>
+      #eeyore-hide {
+        position: relative;
+        width: 60vw;
+        height: 40vw;
+        background-color: rgb(67, 135, 202);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30vh;
+      }
+      #face {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        border: black;
+        border-style: dotted;
+        bottom: -10vh;
+        right: -10vw;
+      }
+
+      #nail-hole {
+        position: relative;
+        width: 10vw;
+        height: 10vw;
+        border: black;
+        border-style: dotted;
+      }
+
+      #face img,
+      #nail-hole img {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+    <script></script>
     <!--  -->
   </head>
   <body>
-    <div id="bullseyeTarget">
+    <!-- mo movement -->
+    <!-- <div id="bullseyeTarget">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/WA_80_cm_archery_target.svg/2048px-WA_80_cm_archery_target.svg.png"
         alt="target"
         width="200px"
       />
+    </div> -->
+    <!--  -->
+    <!-- simple static eeyore -->
+    <div id="eeyore-hide">
+      <div id="nail-hole">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/75/75519.png"
+          alt="nail hole"
+        />
+      </div>
+      <div id="face">
+        <img
+          src="https://www.nicepng.com/png/full/71-716915_covering-eye-with-ear-smiling-timidly-eeyores-smiling.png"
+          alt="eeyore face"
+        />
+      </div>
+      <!--  -->
     </div>
   </body>
 </html>

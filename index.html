@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Mo movement -->
     <style>
-      #donkeyTarget {
+      #bullseyeTarget {
         position: relative;
         width: 200px;
         height: 200px;
       }
     </style>
+    <script>
+      //   // Mo screen-break animation
+      //   let interval = setInterval(function () {
+      //     let div = document.getElementById("bullseyeTarget");
+      //     div.style.top = div.offsetTop + 0.5 + "px";
+      //     div.style.left = div.offsetLeft + 1 + "px";
+      //   }, 200);
+
+      //   let bodyWidth = window.innerWidth;
+      //   let bodyHeight = window.innerHeight;
+      //   console.log(bodyWidth);
+      //   console.log(bodyHeight);
+    </script>
+    <!--  -->
   </head>
   <body>
-    <div id="donkeyTarget">
+    <div id="bullseyeTarget">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/WA_80_cm_archery_target.svg/2048px-WA_80_cm_archery_target.svg.png"
         alt="target"
         width="200px"
       />
     </div>
-    <script>
-      let interval = setInterval(function () {
-        let div = document.getElementById("donkeyTarget");
-        div.style.top = div.offsetTop + 0.5 + "px";
-        div.style.left = div.offsetLeft + 1 + "px";
-      }, 200);
-
-      let bodyWidth = window.innerWidth;
-      let bodyHeight = window.innerHeight;
-      console.log(bodyWidth);
-      console.log(bodyHeight);
-    </script>
   </body>
 </html>

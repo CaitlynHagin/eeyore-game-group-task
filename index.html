@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eeyore Game</title>
-    <script defer src="./javascript/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+<html>
+  <head>
+    <style>
+      #donkeyTarget {
+        position: relative;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="donkeyTarget">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/WA_80_cm_archery_target.svg/2048px-WA_80_cm_archery_target.svg.png"
+        alt="target"
+        width="200px"
+      />
+    </div>
+    <script>
+      let interval = setInterval(function () {
+        let div = document.getElementById("donkeyTarget");
+        div.style.top = div.offsetTop + 0.5 + "px";
+        div.style.left = div.offsetLeft + 1 + "px";
+      }, 200);
 
-
-</body>
+      let bodyWidth = window.innerWidth;
+      let bodyHeight = window.innerHeight;
+      console.log(bodyWidth);
+      console.log(bodyHeight);
+    </script>
+  </body>
 </html>
